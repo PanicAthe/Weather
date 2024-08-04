@@ -1,0 +1,25 @@
+### POST Diary
+POST http://localhost:8080/create/diary?date=2024-08-04
+Content-Type:text/plain
+
+수수수수퍼노바
+
+
+### GET Diary by Date
+GET http://localhost:8080/read/diary?date=2024-08-03
+Accept: application/json
+
+### GET Diaries
+GET http://localhost:8080/read/diaries?startDate=2024-08-01&endDate=2024-08-03
+Accept: application/json
+
+
+### PUT Diary
+PUT http://localhost:8080/update/diary?date=2024-08-03
+Content-Type:text/plain
+
+사건은 커져가
+
+
+### DELETE Diary
+DELETE http://localhost:8080/delete/diary?date=2024-08-03
