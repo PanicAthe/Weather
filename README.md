@@ -17,6 +17,17 @@
       ```
       openweathermap.key=YOUR_API_KEY
       ```
+- **MySQL 데이터베이스 설정**:
+    - `application.properties` 파일에 MySQL 데이터베이스 설정을 추가합니다. 아래는 설정 예시입니다:
+      ```
+      spring.application.name=weather
+      spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+      spring.datasource.url=jdbc:mysql://localhost:3306/weather?serverTimezone=UTC&characterEncoding=UTF-8
+      spring.datasource.username=root
+      spring.datasource.password=root
+      spring.jpa.show-sql=true
+      spring.jpa.database=mysql
+      ```
 
 ## 기술 스택
 
