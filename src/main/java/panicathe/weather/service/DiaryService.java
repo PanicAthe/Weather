@@ -43,8 +43,8 @@ public class DiaryService {
     }
 
     @Transactional
-    //@Scheduled(cron = "0 0 1 * * *") // 매일 새벽 1시마다
-    @Scheduled(cron = "0/5 * * * * *") // 5초마다
+    @Scheduled(cron = "0 0 1 * * *") // 매일 새벽 1시마다
+    //@Scheduled(cron = "0/5 * * * * *") // 5초마다
     public void saveWeatherDate(){
         dateWeatherRepository.save(getWeatherFromAPI());
     }
